@@ -38,6 +38,7 @@ def sum_array(array)
 end
 
 def add_s(array)
+  array.splice("feet", 1)
   array.each do |i|
     i.insert -1, "s"
   end
