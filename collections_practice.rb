@@ -38,8 +38,11 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.splice(index, 1)
-  array.each do |i|
-    i.insert -1, "s"
-  end
+  array.each.with_index.collect do |word, index|
+    if index == feet
+      "feet"
+    else
+      word + "s"
+    end
+  end      
 end
