@@ -28,3 +28,11 @@ def kesha_maker(array)
     i[2] = "$"
   end
 end
+
+def find_a
+
+end
+
+def sum_array(array)
+  array.inject(0, :+)
+end
