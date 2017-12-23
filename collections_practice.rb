@@ -39,7 +39,7 @@ end
 
 def add_s(array)
   array.each.with_index.collect do |word, index|
-    if index == feet
+    if index == "feet"
       "feet"
     else
       word + "s"
